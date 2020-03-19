@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- JQUERY -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="application/javascript" src="index.js"></script>
+    <title>Random User Generator</title>
+</head>
+<body>
+    <div id="Title">
+        <div id="divTitle">
+            <h1>RANDOM USER GENERATOR</h1>
+            <h3>A free, open-source API for generating random user data. Like Lorem Ipsum, but for people.</h3>
+        </div>
+    </div>  
+    <div id="Wrapper">
+        <div id="separatore"></div>
+        <img id="imgPerson" src="img\profiloVuoto.jpg"/>
+        <div id="dettagli">
+            <h3 id="testoStatico"></h3>
+            <h1 id="testoDinamico"></h1>
+            <div id="wrapperImg">
+                <img id="imgNome" class="imgs" src="img\nome.png"/>
+                <img id="imgEmail" class="imgs" src="img\mail.png"/>
+                <img id="imgCompleanno" class="imgs" src="img\compleanno.png"/>
+                <img id="imgIndirizzo" class="imgs" src="img\indirizzo.png"/>
+                <img id="imgNumero" class="imgs" src="img\telefono.png"/>
+                <img id="imgPassword" class="imgs" src="img\password.png"/>
+            </div>
+            <div id="wrapperNav">
+                <input type="button" class="btnNav" id="btnIndietro" value="INDIETRO" onclick="indietro()" disabled/>
+                <input type="button" class="btnNav" id="btnAvanti" value="AVANTI" onclick="avanti()" disabled/>
+            </div>
+            <div>
+                <div id="nPersone"></div>
+            </div>
+        </div>
+    </div>
+    <fieldset id="FiltroUtenti"><legend>Filter</legend>
+        <h3>NUMERO PROFILI</h3>
+            <input id="txtUtenti" class="slider" type="range" min="1" max="25" value="12" step="1" oninput="cambiaValore(this.value)" />
+            <span>12</span>
+        <h3>GENERE</h3>
+            <label>
+                <input type="radio" name="optGender" value=""  checked/><p>Tutti</p>
+                <input type="radio" name="optGender" value="&gender=male"/><p>Uomini</p>
+                 <input type="radio" name="optGender" value="&gender=female" /><p>Donne</p>
+                </label>
+
+        <label><h3>NAZIONALITA'</h3>
+            <input type="checkbox" name="chkNat" value="us" checked/><p>US</p>
+            <input type="checkbox" name="chkNat" value="gb" checked/><p>GB</p>
+            <input type="checkbox" name="chkNat" value="de" checked/><p>DE</p>
+            <input type="checkbox" name="chkNat" value="br" checked/><p>BR</p>
+            <input type="checkbox" name="chkNat" value="ir" checked/><p>IR</p>
+        </label><br>
+        <input type="button" id="genera" value="GENERA" onclick="verificaCampi()"/>
+    </fieldset>
+    
+</body>
+</html>

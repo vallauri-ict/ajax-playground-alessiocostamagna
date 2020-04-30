@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="it">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html">
+    <title> Finance </title>
+    <link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"
+        integrity="sha256-nZaxPHA2uAaquixjSDX19TmIlbRNCOrf5HO1oHl5p70=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+</head>
+
+<h1>Finance</h1>
+
+<select id="CmbBrand"> 
+    <option value="MSFT">Microsoft Corporation SPA</option>
+    <option value="BABA">Alibabà cina</option>
+    <option value="XIACF">Xiaomi Corporation</option>
+    <option value="SNE">Sony Corporation</option>
+    <option value="IBM">IBM</option>
+</select>
+
+<input type="text" id="txtSearch">
+
+<table id="tblResults" class="table">
+    <thead>
+        <tr>
+            <td>Symbol</td>
+            <td>Open</td>
+            <td>High</td>
+            <td>Low</td>
+            <td>Price</td>
+            <td>Volume</td>
+            <td>Latest trading day</td>
+            <td>Previous close</td>
+            <td>Change</td>
+            <td>Change percent</td>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<canvas id="myChart">
+</canvas>
+
+</body>
+</html>

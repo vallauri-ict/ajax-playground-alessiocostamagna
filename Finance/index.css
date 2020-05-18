@@ -38,6 +38,19 @@ h1{
     margin: 50px 0px 30px 195px;
 }
 
+/***********************************/
+
+#btn{
+    width: 30%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
 #imgChart{
-    margin: 50px 0px 30px 195px;
+    width: 40%;
+}
+#btnUpload{
+    width: 40%;
+    margin: 0 auto;
 }

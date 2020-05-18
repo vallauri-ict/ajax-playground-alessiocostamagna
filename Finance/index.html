@@ -16,52 +16,70 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="index.js"></script>
 </head>
+<body>
+    <div class="container-fluid">
 
-<h1>Finance</h1>
+        <div id="header">
+            <div id="imgLogo"></div>
+            <div id="loginBar">
+                <a id="btnLogin" class="btn btn-dark">Login</a>
+            </div>
+        </div>
 
-<select id="CmbBrand"> 
-    <option value="MSFT">Microsoft Corporation SPA</option>
-    <option value="BABA">Alibabà cina</option>
-    <option value="XIACF">Xiaomi Corporation</option>
-    <option value="SNE">Sony Corporation</option>
-    <option value="IBM">IBM</option>
-</select>
 
-<input type="text" id="txtSearch">
+        <select id="CmbBrand"> 
+            <option value="MSFT">Microsoft Corporation SPA</option>
+            <option value="BABA">Alibabà cina</option>
+            <option value="XIACF">Xiaomi Corporation</option>
+            <option value="SNE">Sony Corporation</option>
+            <option value="IBM">IBM</option>
+        </select>
 
-<table id="tblResults" class="table">
-    <thead>
-        <tr>
-            <td>Symbol</td>
-            <td>Open</td>
-            <td>High</td>
-            <td>Low</td>
-            <td>Price</td>
-            <td>Volume</td>
-            <td>Latest trading day</td>
-            <td>Previous close</td>
-            <td>Change</td>
-            <td>Change percent</td>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
+        <input type="text" id="txtSearch">
 
-<select id="cmbChart">
-</select>
+        <div class="table-responsive" id="divTable">
+            <table id="tblResults" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Open</th>
+                        <th>High</th>
+                        <th>Low</th>
+                        <th>Price</th>
+                        <th>Volume</th>
+                        <th>Latest trading day</th>
+                        <th>Previous close</th>
+                        <th>Change</th>
+                        <th>Change percent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Chart</h2>
+        </div>
 
-<div class="chartDiv">
-    <canvas id="myChart">
-    </canvas>
-</div>
+        <select id="cmbChart">
+        </select>
 
-<div id="btn">
-    <a id="imgChart" download="chart.png" href="" class="btn btn-dark">Download</a>
-    <a id="btnUpload" class="btn btn-dark">Upload</a>
-    <input type="file" id="file">
-</div>
- <a id="btnLogin">Login</a>
+        <div class="chartDiv">
+            <canvas id="myChart">
+            </canvas>
+        </div>
+
+        <div id="btn">
+            <a id="imgChart" download="chart.png" href="" class="btn btn-dark">Download</a>
+            <a id="btnUpload" class="btn btn-dark">Upload</a>
+            <input type="file" id="file">
+        </div>
+    </div>
+    <div id="header" class="navbar bottom">
+        <div id="imgLogo"></div>
+        <div id="loginBar">
+        </div>
+    </div>
 
 </body>
 </html>
